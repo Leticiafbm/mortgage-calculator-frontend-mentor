@@ -49,6 +49,14 @@
     }
 
     .mortgage-calculator-inputs .input-container .main-inputs{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
+        border: 1px solid var(--mild-font-color);
+        border-radius: var(--mild-border-radius);
+        background-color: var(--background-color);
+        width: 100%;
         max-width: 100%;
         height: 55px;
         padding: 2%;
