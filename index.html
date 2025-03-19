@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+  </head>
+  <body>
+
+   <main class="main">
+      <section class="mortgage-calculator-container">
+          <nav class="main-nav">
+              <h1 class="main-title">Mortgage Calculator</h1>
+              <input  class="clear-all-button" type="button" value="Clear All" onclick="clearAll()">
+          </nav>
+          
+          <section class="mortgage-calculator-inputs">
+              <div class="input-container" id="inputContainer">
+                  <label for="mortgageTotalInput" class="input-label">Mortgage Amount</label>
+                  <input class="main-inputs" type="number" id="mortgageTotalInput">
+                  <span class="currency-placeholder">£</span>
+              </div>
+
+              <div class="input-container">
+                <label for="mortgageTermInput" class="input-label">Mortgage Term</label>
+                <input class="main-inputs" type="number" id="mortgageTermInput">
+                <span class="years-placeholder">years</span>
+              </div>
+
+            <div class="input-container">
+              <label for="interestRateInput" class="input-label">Interest Rate</label>
+              <input class="main-inputs" type="number" id="interestRateInput">
+              <span class="percentage-placeholder">%</span>
+            </div>
+          </section>
+
+          <section class="mortgage-type-radios">
+
+            <h4 for="" class="mortgage-type-radios-title">Mortage Type</h4>
+            <div class="mortgage-type-radios-container">
+                <input class="radios-buttons" type="radio" name="mortgageType" id="repaymentType" checked>
+                <p class="radio-type">Repayment</p>
+            </div>
+
+            <div class="mortgage-type-radios-container">
+              <input class="radios-buttons" type="radio" name="mortgageType" id="interestonlyType">
+              <p class="radio-type">Interest Only</p>
+            </div>
+          </section>
+
+          <button id="calculeButton" class="calcule-repayments-button">
+              <img src="./assets/images/icon-calculator.svg" alt="calculator icon" class="calculator-icon">
+              <p class="calcule-rapyments-button-text">Calcule Repayments</p>
+          </button>
+      </section>
+
+      <section class="result-container">
+          <div id="noResultContainer" class="no-result">
+            <img class="no-result-img" src="./assets/images/illustration-empty.svg" alt="results will show here" class="no-result-img">
+            <h2 class="no-result-title">Results shown here</h2>
+            <p class="no-result-paragraph">Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+          </div>
+
+          <div id="resultContainer" class="result-main-container">
+              <h2 class="result-title">Your results</h2>
+              <p class="result-paragraph">Your results are shown below based on the information you provided. 
+              To adjust the results, edit the form and click “calculate repayments” again.</p>
+
+              <div class="result-container">
+                  <p class="total-monthly-repayments-text">Your monthly repayments</p>
+                  <div class="total-monthly-repayments" id="totalMonthlyRepayments"></div>
+
+                  <p class="total-repayments-text">Total you'll repay over the term</p>
+                  <div class="total-repayments" id="totalRepayments"></div>
+              </div>
+          </div>
+      </section>
+   </main>
+    <script src="./script/index.js"></script>
+    <script>
+      function clearAll(){
+        location.reload();
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+@media screen and (min-width: 1024px){
+
+    body{
+        width: 90%;
+        min-height: 100vh;
+        align-items: center;
+        padding: 0;
+        background-color: var(--desktop-background-color);
+    }
+
+    body .main{
+        margin: 0 auto;
+        flex-direction: row;
+        padding: 0;
+        background-color: var(--background-color);
+        border-radius: var(--medium-border-radius);
+        box-shadow: 15px 15px 20px #7da2b81a;
+    }
+
+    .main .mortgage-calculator-container .main-nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .main-nav .main-title{
+        font-size: var(--xx-font-size);
+        font-weight: var(--title-font-weight);
+        color: var(--dark-font-color);
+    }
+
+    .main-nav .clear-all-button{
+        cursor: pointer;
+    }    
+
+    .main .mortgage-calculator-container{
+        max-width: 500px;
+        min-width: 57%;
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        gap: 30px;
+    }
+
+    .mortgage-calculator-inputs{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+    }
+
+    .mortgage-calculator-inputs .input-container .main-inputs{
+        max-width: 100%;
+        height: 55px;
+        padding: 2%;
+        padding-left: 15%;
+        outline: 0;
+        border: 1px solid var(--mild-font-color);
+        border-radius: var(--mild-border-radius);
+        outline: initial;
+        transition: outline 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    }
+
+    .main-inputs:focus {
+        outline-offset: 2px; 
+        border-color: var(--tertiary-color) !important;
+    }
+
+    .main-inputs:focus + .currency-placeholder,
+    .main-inputs:focus + .years-placeholder,
+    .main-inputs:focus + .percentage-placeholder {
+        color: var(--secondary-color); 
+        background-color: var(--tertiary-color);
+    }
+
+    #inputContainer{
+        grid-column: span 2;
+    }
+
+    .mortgage-calculator-inputs .input-container .currency-placeholder{
+        padding: 16px 20px 16px 20px;
+    }
+    
+    .mortgage-calculator-inputs .input-container .years-placeholder{
+        padding: 16px 20px 16px 20px;
+    }
+    
+    .mortgage-calculator-inputs .input-container .percentage-placeholder{
+        padding: 16px 20px 16px 20px;
+    }
+
+    .mortgage-type-radios .mortgage-type-radios-container{
+        display: flex;
+        padding: 16px;
+        border: 1px solid var(--mild-font-color);
+        border-radius: var(--mild-border-radius);
+    }
+
+    .calcule-repayments-button{
+        align-self: self-start;
+        padding: 16px 48px 16px 48px;
+        cursor: pointer;
+        transition: transform 0.1s ease-in-out;
+    }
+
+    .calcule-repayments-button:active{
+        transform: scale(0.9);
+    }
+
+    .result-container{
+        max-width: 500px;
+        min-width: 54%;
+        padding: 7%;
+        border-radius: 0 14px 14px 100px;
+    }
+
+    .result-main-container{
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        text-align: left;
+    }
+    
+    .result-main-container .result-title{
+        font-size: var(--xx-font-size);
+    }
+    
+    .result-main-container .result-paragraph{
+        line-height: 28px;
+    }
+    
+    .result-main-container .result-container{
+        height: 270px;
+        min-height: 40%;
+    }
+    
+    .result-container .total-monthly-repayments{
+        font-size: 3.2rem;
+    }
+    
+    .result-container .total-repayments-text{
+        margin-top: 14px;
+    }
+    
+    .result-container .total-repayments{
+        font-size: 1.5rem;
+    }
+}

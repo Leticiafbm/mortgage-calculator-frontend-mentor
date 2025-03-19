@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url(reset.css);
+@import url(mobile.css);
+@import url(desktop.css);
+
+:root{
+    --desktop-background-color: #e3f4fc;
+    --background-color: #fff;
+    --secondary-color: #133040;
+    --tertiary-color : #d9dc35;
+    --dark-background-color: #0e2431;
+    --placeholder-color: #e5f4fb;
+
+    --dark-font-color: #133040;
+    --mild-font-color: #56676f;
+    --transparent-white-color: #ffffffa1;
+    --placeholder-font-color: #46606d;
+
+    --title-font-weight: 700;
+    --placeholder-font-weight: 600;
+    --regular-font-weight: 500;
+    --thin-font-weight: 400;
+    --thinner-font-weight: 300;
+
+    --xl-font-size: 2.3rem;
+    --xx-font-size: 1.8rem;
+    --x-font-size: 1.4rem;
+    --m-font-size: 1.2rem;
+    --regular-font-size: 1.1rem;
+    --s-font-size: 1rem;
+    --ss-font-size: .9rem;
+
+    --round-border-radius: 30px;
+    --medium-border-radius: 14px;
+    --normal-border-radius: 8px;
+    --mild-border-radius: 5px;
+}
