@@ -4,7 +4,6 @@ body {
     display: flex;
     min-height: 100vh;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    overflow: hidden;
 }
 
 body .main{
@@ -81,7 +80,7 @@ body .main{
     color: var(--placeholder-font-color);
     font-weight: var(--placeholder-font-weight);
     border-radius: 5px 0 0 5px;
-    padding: 11px 15px 11px 15px;
+    padding: 11px 14px 11px 14px;
     position: absolute;
     top: 29px;
     left: 1px;
