@@ -62,7 +62,19 @@ function calcule(){
         const totalMonthlyRepaymentsDiv = document.querySelector('#totalMonthlyRepayments');
         const totalRepaymentsDiv = document.querySelector('#totalRepayments');
 
-        totalMonthlyRepaymentsDiv.innerHTML = `£${monthlyRepayments.toFixed(2)}`
-        totalRepaymentsDiv.innerHTML = `£${totalRepayments.toFixed(2)}`
+        totalMonthlyRepaymentsDiv.innerHTML = `${monthlyRepayments.toLocaleString('en-GB', 
+             {
+                style: "currency",
+                currency: 'GBP',
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+            })}`
+        totalRepaymentsDiv.innerHTML = `${totalRepayments.toLocaleString('en-GB', 
+            {
+              style: "currency",
+              currency: 'GBP',
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2
+            })}`
     }
 }
